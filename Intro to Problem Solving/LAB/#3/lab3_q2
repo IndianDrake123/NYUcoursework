@@ -1,0 +1,25 @@
+# Brian
+# Lab 3: Drawing parallels   
+# Date Due: 9/29/23
+# I pledge that I have completed this assignment without
+# collaborating with anyone else, in conformance with the
+# NYU School of Engineering Policies and Procedures on
+# Academic Misconduct.
+
+import random
+
+slope = random.randint(-5, 5)
+y_int = random.randint(0, 10)
+
+print("Welcome to Drawing Parallels! Test whether your line is parallel to f(x)=" + str(slope) + "x + " + str(y_int))
+
+user_slope = int(input("Enter slope: "))
+user_y_int = int(input("Enter y-int: "))
+
+if slope == user_slope:
+    if user_y_int != y_int:
+        print("Your line f(x)=" + str(slope) + "x + " + str(y_int) + " is PARALLEL to the line f(x)=" + str(user_slope) + "x + " + str(user_y_int))
+    else: 
+        print("Your line f(x)=" + str(slope) + "x + " + str(y_int) + " is THE SAME as the line f(x)=" + str(user_slope) + "x + " + str(user_y_int))
+else:
+    print("Your line f(x)=" + str(slope) + "x + " + str(y_int) + " is NOT PARALLEL to the line f(x)=" + str(user_slope) + "x + " + str(user_y_int))

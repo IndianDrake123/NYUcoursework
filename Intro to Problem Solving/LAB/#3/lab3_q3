@@ -1,0 +1,39 @@
+# Brian
+# Lab 3: What is my Grade?   
+# Date Due: 9/29/23
+# I pledge that I have completed this assignment without
+# collaborating with anyone else, in conformance with the
+# NYU School of Engineering Policies and Procedures on
+# Academic Misconduct.
+
+highest = float(input("highest: ")) * .25
+second = float(input("second: ")) * .2
+third = float(input("third: ")) * .15
+hw = float(input("hw: ")) * .2
+lab = float(input("lab: ")) * .2
+
+final_grade = highest + second + third + hw + lab
+script = "Your final grade is"
+
+if final_grade > 92:
+    print(script, "A")
+elif final_grade >= 90:
+    print(script, "A-")
+elif final_grade >= 87:
+    print(script, "B+")
+elif final_grade >= 83:
+    print(script, "B")
+elif final_grade >= 80:
+    print(script, "B-")
+elif final_grade >= 77:
+    print(script, "C+")
+elif final_grade >= 73:
+    print(script, "C")
+elif final_grade >= 70:
+    print(script, "C-")
+elif final_grade >= 66:
+    print(script, "D+")
+elif final_grade >= 60:
+    print(script, "D")
+else:
+    print(script, "F")

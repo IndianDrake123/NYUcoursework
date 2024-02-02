@@ -1,0 +1,46 @@
+# Brian
+# Lab 3: It Pays to be Lucky    
+# Date Due: 9/29/23
+# I pledge that I have completed this assignment without
+# collaborating with anyone else, in conformance with the
+# NYU School of Engineering Policies and Procedures on
+# Academic Misconduct.
+
+price = 5
+
+rarity = input("Special rarity? (Y/N): ")
+if rarity == "Y":
+    uncommon = input("Is your card uncommon? (Y/N): ")
+    if uncommon == "Y":
+        price += 5
+    elif uncommon == "N":
+        rare = input("Is your card rare? (Y/N): ")
+        if rare == "Y":
+            price += 15 
+
+holographic = input("Holographic? (Y/N): ")
+if holographic == 'Y':
+    reverse = input("Is your card reverse? (Y/N): ")
+    if reverse == "Y":
+        price += 10
+    elif reverse == "N":
+        holo = input("Is your card holo? (Y/N): ")
+        if holo == 'Y':
+            price += 15
+        elif holo == 'N':
+            full = input("Is your card full? (Y/N): ")
+            if full == 'Y':
+                price += 20
+
+special = input("Special rarity? (Y/N): ")
+if special == "Y":
+    starter = input("Is your card a starter? (Y/N): ")
+    if starter == "Y":
+        price += 5
+    elif starter == "N":
+        legendary  = input("Is your card a legendary? (Y/N): ")
+        if legendary == "Y":
+            price += 30
+
+
+print("Your card has a final resale price of: $", price)

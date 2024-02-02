@@ -1,0 +1,16 @@
+1.
+name[1]
+name[len(name)]
+name[:6]
+
+2.
+name[0:4].capitalize()
+name[5:].capitalize()
+
+3.
+S[0:7:2] + ' ' + S[9::2]
+S[0:4] + + ' ' + S[8:11]
+
+4.
+place[16:]
+place[8::-1]

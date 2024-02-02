@@ -1,0 +1,32 @@
+# Brian
+# Lab 3: Python and Friends     
+# Date Due: 9/29/23
+# I pledge that I have completed this assignment without
+# collaborating with anyone else, in conformance with the
+# NYU School of Engineering Policies and Procedures on
+# Academic Misconduct.
+
+venemous = input("is the snake venemous?: ")
+small = input("Is the snake small?: ")
+aggressive = input("Is the snake aggressive?: ")
+
+venemous = True if venemous == 'yes' else False
+small = True if small == 'yes' else False
+aggressive = True if aggressive == 'yes' else False
+
+if not venemous and not small and not aggressive:
+    print("That is a Python Python. One of the largest and most famous snakes. However, they are pretty slow, and are commonly used to introduce people to learning about snakes")
+elif not venemous and not small and aggressive:
+    print('That is an Assembly Anaconda.  Many people hate learning about these snakes, as they look very intimidating. In the Totally Official CS1114 Snake Register, they are said to love being in low level altitudes.')
+elif not venemous and small and not aggressive:
+    print("That is a Java Kingsnake. Fun Facts: Very befitting of their name, they are objectively the most sophisticated snake species. One may even say they are very classy.")
+elif not venemous and small and aggressive:
+    print("That is a Javascript Treesnake.  Despite its name, they are completely different from the Java Kingsnake. They like to lay on the nodes of a tree to browse through nearby animals for their next meal.")
+elif venemous and not small and not aggressive:
+    print("That is a C Serpent. : Can be found in the sea. Has the ability to control their memory, being able to allocate parts of their brain for certain tasks and permanently delete information from their memories.: Can be found in the sea. Has the ability to control their memory, being able to allocate parts of their brain for certain tasks and permanently delete information from their memories.")
+elif venemous and not small and aggressive:
+    print("That is a C++ Cobra. Evolved from the C Serpents many years ago. Reports show they have the weird habit of pointing at objects with their tails.")
+elif venemous and small and not aggressive:
+    print("That is a Verilog Viper: Many people first see these snakes around architectures. Reports claim that they like to chew on circuit wires.")
+elif venemous and small and aggressive:
+    print("That is a Matlab Mamba. Commonly used to introduce mech-ies to working with snakes. They often hatch plots to catch their prey and enjoy graphical images.")
